@@ -1,0 +1,25 @@
+<ion-view title="North Indian">
+       <ion-nav-buttons side="left">
+  <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+      <ion-content class="has-header">
+  <ion-list>
+  <ion-item ng-repeat="playlist in browse1" class="container list card animated zoomin"  href="#/app/playlists/{{playlist.id}}">
+     <div class="jumbotron" >
+
+     <span>
+             <img src='{{playlist.pic}}' class="img-responsive" /><br>
+
+     </span>
+     <span >
+              {{playlist.name}}
+              </span>
+
+    </div>
+
+
+  </ion-item>
+  </ion-list>
+</ion-content>
+    </ion-view>
+  

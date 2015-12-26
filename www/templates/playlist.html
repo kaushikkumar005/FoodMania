@@ -1,0 +1,55 @@
+<ion-view title="Recipe Details">
+
+<ion-content >
+  <ion-list>
+    <ion-item >
+
+<div class="container">
+
+
+
+
+
+
+
+<h2 style="font-color:black"><b>Ingredients</b></h2>
+<pre class="list card animated zoomin">
+
+  {{playlist.ingredients}}
+
+</pre>
+
+
+
+
+
+
+
+
+
+      </div>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
+</ion-view>
+
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+  <!-- Dashboard Tab -->
+  <ion-tab title="Ingredients" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/app/playlists/{{playlist.id}}">
+    <ion-nav-view name="playlist"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Chats Tab -->
+  <ion-tab title="Method" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/app/playlists/{{playlist.id}}/method">
+    <ion-nav-view name="splash"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Account Tab -->
+  <ion-tab title="Account" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/app/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>

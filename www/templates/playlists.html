@@ -1,0 +1,27 @@
+<ion-view title="All Recipe" >
+<ion-nav-buttons side="left">
+  <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+
+<ion-content class="has-header " >
+  <ion-list >
+
+    <ion-item ng-repeat="playlist in playlists" class=" list card animated zoomin"  href="#/app/playlists/{{playlist.id}}">
+       <div class="jumbotron" >
+
+       <span style="padding-left:35px">
+               <img src='{{playlist.pic}}' class="img-responsive img-circle" /><br>
+
+       </span>
+       <span style="padding-left:35px">
+                {{playlist.name}}
+                </span>
+
+      </div>
+
+
+    </ion-item>
+
+  </ion-list>
+</ion-content>
+</ion-view>
